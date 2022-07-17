@@ -20,7 +20,7 @@
    <div class="container navContainer">
         <div class="row subContainer">
             <div class="col-lg-4 d-flex justify-content-center aligns-items-center">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="../Assets/Images/logo.svg" alt="ICFAI university Logo" width="180". height="70">
                 </a>
             </div>
@@ -55,14 +55,11 @@
             </section>
         </div>
         <div class="col-lg-7 d-flex aligns-items-center justify-content-center">
-            <video class="oneVid" src="../Assets/videos/ku2hye5v.mp4" autoplay loop></video>
+            <video class="oneVid ratio ratio-16by9" src="../Assets/videos/ku2hye5v.mp4" autoplay loop></video>
         </div>
     </div>
     
  </div>
-<!-- Bootstrap cdn -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

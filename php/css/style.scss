@@ -1,0 +1,149 @@
+// google fonts imports
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+// parent class for navbar
+.navContainer{
+    position: relative;
+}
+.navContainer{
+    height: auto;
+
+    .subContainer{
+        padding-top: 2em;
+        padding-bottom: .5em;
+    }
+     h2{
+        padding-top: .4em;
+        font-family: 'Rubik', sans-serif;
+     }
+}
+
+
+.main-container{
+    .left{
+        padding-top: 2%;
+    }
+
+    .oneVid{
+        height: 400px;
+    }
+}
+   li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10%;
+    cursor: pointer;
+    font-size: 1.3rem; 
+    font-family: 'Dosis', sans-serif;
+    transition: all 250ms ease-in-out;
+     
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+li:hover{
+    transform:scale(1.2);
+    color: rgb(17, 2, 58);
+    font-style: italic;
+    font-weight: 600;
+}
+   
+.sectionPara{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.4rem;
+}
+.secContainer{
+    padding-top: 10%;
+}
+.animateMe{
+    opacity: .8 ;
+    font-family: Dosis;
+    // animation properties
+    animation: bounce 5s infinite;
+    animation-timing-function: ease-in;
+    font-size: 1.8rem;
+}
+@keyframes bounce{
+
+    40%{opacity: .6;
+        color: rgb(163, 48, 48);}
+
+    50%{opacity: .7;
+        color:rgb(17, 2, 58)(67, 9, 133)}
+
+    60%{opacity: .8;
+        color:rgb(17, 2, 58)(67, 9, 133)}
+
+    70%{opacity: .9;
+        color:rgb(17, 2, 58)(67, 9, 133)}
+
+    80%{opacity: 1;
+        color:rgb(17, 2, 58)(67, 9, 133)
+    }
+
+    85%{opacity: 1;
+        color:rgb(17, 2, 58)(67, 9, 133)}
+
+    90%{opacity: 1;
+        color:rgb(17, 2, 58)(67, 9, 133);
+    }
+
+    95%{opacity: 1;
+        color:rgb(17, 2, 58)(67, 9, 133);
+    }
+    100%{
+        opacity: 1;
+        color:rgb(17, 2, 58)(67, 9, 133);
+    }
+}
+.btnContainer{
+    padding-top: 2%;
+
+        .btnn{
+            color: white;
+            border: none;
+            background: none;
+            width: auto;
+            height: 2.5rem;
+            border-radius: 10px;
+            background: rgb(79, 2, 114);
+            box-shadow: 0 9px 25px rgb(50, 0, 56);
+            transition: all .3s ease-in-out;
+            font-size: 1.2em;
+            font-family: 'Dosis', sans-serif;
+        }
+        .btnn:hover{
+            transform: scale(1.1);
+            box-shadow: 0 9px 35px rgb(0, 0, 0);
+            border-radius: 15px;
+        }
+      
+}
+
+
+.c1{
+    text-align-last: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+   .mainbtnContainer{
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .btnContainer{
+            display: flex; 
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+   }
+  }
+  @media only screen and (min-width: 1200px) {
+    .c1{
+        padding-right: 5%;
+    }
+   }

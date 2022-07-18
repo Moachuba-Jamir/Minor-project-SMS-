@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+    
+.logo{
+    padding-top: 1%;
+}
 .loginContainer{
     position: absolute;
     z-index: -10;
@@ -7,12 +13,91 @@
 .oneVid{
     height: 500px;
     width: auto;
-    
-    opacity: .8;
+    opacity: 1;
+    margin-top: 15%;
+   }
+   
+   .formClass{
+    margin-top: 10%;
    }
 
+
+// form design
+.formClass{
+    h4{
+        font-size: 5rem;
+        font-family: 'Sora', sans-serif;
+    }
+}
+input{
+    width: 50%;
+    padding-block: 2%;
+    border-top: none;
+    border-radius: 10px;
+    box-shadow: 1px 5px 25px rgb(77, 16, 1);
+    opacity: .8;
+    transition: all .3s ease-out;
+}
+input:focus{
+    outline: none;
+}
+input:hover{
+    transform: translateX(23px);
+    opacity: 1;
+    box-shadow: 1px 5px 85px rgb(77, 16, 1);
+}
+
+.register{
+    font-family: 'Sora', sans-serif;
+    font-style: italic;
+}
+a{
+    transition: all .2s ease-in-out;
+}
+
+a:hover{
+   font-size: 1.5rem;
+}
+.btnn{
+     border-radius: 14px;
+     opacity: .7 ;
+     background-color: rgb(6, 199, 102);
+     color: black;
+     transition: all .5s ease-out;
+     box-shadow: 1px 18px 45px rgb(0, 165, 63);
+}
+
+.btnn:hover{
+    transform:translateX(15px);
+    opacity: 1;
+    box-shadow: 1px 18px 85px rgb(0, 165, 63);
+}
+
+//    media queries
    @media only screen and (max-width: 500px) {
     .oneVid{
         height: 400px;
     }
+    .formClass{
+        margin-top: 30;
+       }
+       h4{
+        font-size: 3em;
+       }
+       .register{
+        font-size: 1rem;
+        text-align: left;
+       }
+
    }
+   @media only screen and (max-width: 998px) {
+    // to be continued after form design
+    .formClass{
+        margin-top: 24%;
+       }
+   }
+
+
+
+   
+   

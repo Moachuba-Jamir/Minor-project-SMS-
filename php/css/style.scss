@@ -108,7 +108,7 @@ li:hover{
             width: auto;
             height: 2.5rem;
             border-radius: 10px;
-            background: rgb(79, 2, 114);
+            background: rgb(4, 111, 157);
             box-shadow: 0 9px 25px rgb(50, 0, 56);
             transition: all .3s ease-in-out;
             font-size: 1.2em;
@@ -118,6 +118,10 @@ li:hover{
             transform: scale(1.1);
             box-shadow: 0 9px 35px rgb(0, 0, 0);
             border-radius: 15px;
+        }
+        
+        .btn:hover::aftere{
+            content:"online";
         }
       
 }

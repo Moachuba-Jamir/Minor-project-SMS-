@@ -158,7 +158,7 @@ li:hover {
   width: auto;
   height: 2.5rem;
   border-radius: 10px;
-  background: #4f0272;
+  background: #046f9d;
   -webkit-box-shadow: 0 9px 25px #320038;
           box-shadow: 0 9px 25px #320038;
   -webkit-transition: all .3s ease-in-out;
@@ -173,6 +173,10 @@ li:hover {
   -webkit-box-shadow: 0 9px 35px black;
           box-shadow: 0 9px 35px black;
   border-radius: 15px;
+}
+
+.btnContainer .btn:hover::aftere {
+  content: "online";
 }
 
 .c1 {

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+.navContainer {
+  position: relative;
+}
+
+.navContainer {
+  height: auto;
+}
+
+.navContainer .subContainer {
+  padding-top: 2em;
+  padding-bottom: .5em;
+}
+
+.navContainer h2 {
+  padding-top: .4em;
+  font-family: 'Rubik', sans-serif;
+}
+
+.main-container .left {
+  padding-top: 2%;
+}
+
+.main-container .oneVid {
+  height: 400px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 10%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-family: 'Dosis', sans-serif;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #11023a;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.sectionPara {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.4rem;
+}
+
+.secContainer {
+  padding-top: 10%;
+}
+
+.animateMe {
+  opacity: .8;
+  font-family: Dosis;
+  -webkit-animation: bounce 5s infinite;
+          animation: bounce 5s infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  font-size: 1.8rem;
+}
+
+@-webkit-keyframes bounce {
+  40% {
+    opacity: .6;
+    color: #a33030;
+  }
+  50% {
+    opacity: .7;
+    color: #11023a 67, 9, 133;
+  }
+  60% {
+    opacity: .8;
+    color: #11023a 67, 9, 133;
+  }
+  70% {
+    opacity: .9;
+    color: #11023a 67, 9, 133;
+  }
+  80% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+  85% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+  90% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+  95% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+  100% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+}
+
+@keyframes bounce {
+  40% {
+    opacity: .6;
+    color: #a33030;
+  }
+  50% {
+    opacity: .7;
+    color: #11023a 67, 9, 133;
+  }
+  60% {
+    opacity: .8;
+    color: #11023a 67, 9, 133;
+  }
+  70% {
+    opacity: .9;
+    color: #11023a 67, 9, 133;
+  }
+  80% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+  85% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+  90% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+  95% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+  100% {
+    opacity: 1;
+    color: #11023a 67, 9, 133;
+  }
+}
+
+.btnContainer {
+  padding-top: 2%;
+}
+
+.btnContainer .btnn {
+  color: white;
+  border: none;
+  background: none;
+  width: auto;
+  height: 2.5rem;
+  border-radius: 10px;
+  background: #00515c;
+  -webkit-box-shadow: 0 9px 25px #320038;
+          box-shadow: 0 9px 25px #320038;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-size: 1.2em;
+  font-family: 'Dosis', sans-serif;
+}
+
+.btnContainer .btnn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 9px 35px black;
+          box-shadow: 0 9px 35px black;
+  border-radius: 15px;
+}
+
+.c1 {
+  text-align-last: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainbtnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainbtnContainer .btnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .c1 {
+    padding-right: 5%;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

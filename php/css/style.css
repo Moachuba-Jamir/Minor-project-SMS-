@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .navContainer {
   position: relative;
 }
@@ -18,12 +23,18 @@
   font-family: 'Rubik', sans-serif;
 }
 
+.firstContainer {
+  padding-top: 10%;
+}
+
 .main-container .left {
   padding-top: 2%;
 }
 
 .main-container .oneVid {
-  height: 400px;
+  height: 550px;
+  margin-top: -19%;
+  z-index: -10;
 }
 
 li {
@@ -53,10 +64,11 @@ li:hover {
 .sectionPara {
   font-family: 'Dosis', sans-serif;
   font-size: 1.4rem;
+  margin-left: 5%;
 }
 
 .secContainer {
-  padding-top: 10%;
+  margin-top: 10%;
 }
 
 .animateMe {
@@ -156,15 +168,16 @@ li:hover {
   border: none;
   background: none;
   width: auto;
-  height: 2.5rem;
+  height: 2.9rem;
   border-radius: 10px;
-  background: #046f9d;
-  -webkit-box-shadow: 0 9px 25px #320038;
-          box-shadow: 0 9px 25px #320038;
+  background: #014f70;
+  -webkit-box-shadow: 0 9px 35px #671d00;
+          box-shadow: 0 9px 35px #671d00;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   font-size: 1.2em;
   font-family: 'Dosis', sans-serif;
+  padding-inline: 10%;
 }
 
 .btnContainer .btnn:hover {
@@ -175,12 +188,17 @@ li:hover {
   border-radius: 15px;
 }
 
-.btnContainer .btn:hover::aftere {
+.btnContainer .btn:hover::after {
   content: "online";
 }
 
 .c1 {
   text-align-last: center;
+}
+
+.secondContainer {
+  margin-top: -.5%;
+  border-top: 3px solid magenta;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -214,11 +232,28 @@ li:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .oneVid {
+    height: 400px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .c1 {
     padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

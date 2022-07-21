@@ -1,7 +1,14 @@
 // google fonts imports
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
 // parent class for navbar
+
 .navContainer{
     position: relative;
 }
@@ -18,15 +25,18 @@
      }
 }
 
-
+.firstContainer{
+    padding-top: 10%;
+}
 .main-container{
     .left{
         padding-top: 2%;
     }
-
     .oneVid{
-        height: 400px;
-    }
+        height: 550px;
+        margin-top: -19%;
+        z-index:-10;
+    }  
 }
    li{
     list-style: none;
@@ -53,9 +63,12 @@ li:hover{
 .sectionPara{
     font-family: 'Dosis', sans-serif;
     font-size: 1.4rem;
+    margin-left: 5%;
+  
 }
+
 .secContainer{
-    padding-top: 10%;
+    margin-top: 10%;
 }
 .animateMe{
     opacity: .8 ;
@@ -106,13 +119,14 @@ li:hover{
             border: none;
             background: none;
             width: auto;
-            height: 2.5rem;
+            height: 2.9rem;
             border-radius: 10px;
-            background: rgb(4, 111, 157);
-            box-shadow: 0 9px 25px rgb(50, 0, 56);
+            background: rgb(1, 79, 112);
+            box-shadow: 0 9px 35px rgb(103, 29, 0);
             transition: all .3s ease-in-out;
             font-size: 1.2em;
             font-family: 'Dosis', sans-serif;
+            padding-inline: 10%;
         }
         .btnn:hover{
             transform: scale(1.1);
@@ -120,7 +134,7 @@ li:hover{
             border-radius: 15px;
         }
         
-        .btn:hover::aftere{
+        .btn:hover::after{
             content:"online";
         }
       
@@ -131,6 +145,12 @@ li:hover{
     text-align-last: center;
 }
 
+.secondContainer{
+    margin-top: -.5%;
+    border-top: 3px solid magenta;
+}
+
+
 
 // media Queries
 @media only screen and (max-width: 1000px) {
@@ -139,6 +159,7 @@ li:hover{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
         .btnContainer{
             display: flex; 
             flex-direction: row;
@@ -146,9 +167,19 @@ li:hover{
             align-items: center;
         }
    }
+   .oneVid{
+    height: 400px;
+}
   }
   @media only screen and (min-width: 1200px) {
     .c1{
         padding-right: 5%;
+    }
+   }
+   @media only screen and (max-width: 990px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items:center;
     }
    }

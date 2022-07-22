@@ -5,7 +5,7 @@ include_once 'connect.php';
 session_start();
 
 if(!isset($_SESSION['enrol_no'])){
-    header("Locaion: login.php");
+    header("Location: login.php");
 }
 ?>
 
@@ -25,9 +25,9 @@ if(!isset($_SESSION['enrol_no'])){
       <!-- Main Body container -->
  <div class="container main-container">
     <?php
-         echo "<pre>";
-         print_r($_SESSION);
-         echo "</pre>";
+        //  echo "<pre>";
+        //  print_r($_SESSION);
+        //  echo "</pre>";
     ?>
     <div class="row">
         <div class=" firstContainer left col-lg-6 d-flex aligns-items-center justify-content-center">
@@ -55,15 +55,102 @@ if(!isset($_SESSION['enrol_no'])){
  </div>
 
  <!-- second container -->
- <div class=" secondContainer container-fluid d-flex justify-content-center align-items-center secondContainer">
-    <div class="row container">
-        <div class="col-lg-6">
-            this is the first column
+ <div class=" secondContainer container-fluid d-flex justify-content-center align-items-center">
+    <div class="row container card-container">
+        <div class="col-lg-3 d-flex align-items-center justify-content-center">
+            <div class="card myCard" style="width: 18rem; border-radius: 15px;">
+            <video src="../Assets//videos//results3.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
+            style="height:200px"></video>
+            <div class="card-body row">
+                <hr>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center ">
+                <h3 class="card-title">Semester Results</h3>
+                </div>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <p class="card-text userName" style="font-family: 'Rubik', sans-serif;
+                    color: rgb(98, 4, 43);
+        font-weight: 600;" > <label for="name">Student: &nbsp</label><?php echo $_SESSION['user_name'] ?></p>
+                </div>
+            
+            <div class="col-lg-12 d-flex align-items-center justify-content-center"
+            style="padding-top: 5%;">
+            <a href="#" class="btn btn-danger">View Result</a>
+            </div>
+            
         </div>
-        
-        <div class="col-lg-6">
-            this is the first column
+    </div>
+</div>
+<!-- fee payment -->
+<div class="col-lg-3 d-flex align-items-center justify-content-center">
+            <div class="card myCard" style="width: 18rem; border-radius: 15px;">
+            <video src="../Assets//videos//payment.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
+            style="height:200px"></video>
+            <div class="card-body row">
+                <hr>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center ">
+                <h3 class="card-title">Semester Fee</h3>
+                </div>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <p class="card-text userName" style="font-family: 'Rubik', sans-serif;
+                    color: rgb(98, 4, 43);
+        font-weight: 600;" > <label for="name">Degree: &nbsp</label><?php echo $_SESSION['degree'] ?></p>
+                </div>
+            
+            <div class="col-lg-12 d-flex align-items-center justify-content-center"
+            style="padding-top: 5%;">
+            <a href="#" class="btn btn-primary active">View log</a>
+            </div>
+            
         </div>
+    </div>
+</div>
+<div class="col-lg-3 d-flex align-items-center justify-content-center">
+            <div class="card myCard" style="width: 18rem; border-radius: 15px;">
+            <video src="../Assets//videos//student.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
+            style="height:200px"></video>
+            <div class="card-body row">
+                <hr>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center ">
+                <h3 class="card-title">Attendance</h3>
+                </div>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <p class="card-text userName" style="font-family: 'Rubik', sans-serif;
+                    color: rgb(98, 4, 43);
+        font-weight: 600;" > <label for="name">Enrollment No: &nbsp</label><?php echo $_SESSION['enrol_no'] ?></p>
+                </div>
+            
+            <div class="col-lg-12 d-flex align-items-center justify-content-center"
+            style="padding-top: 5%;">
+            <a href="#" class="btn btn-warning">Check Attendance</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 d-flex align-items-center justify-content-center">
+            <div class="card myCard" style="width: 18rem; border-radius: 15px;">
+            <video src="../Assets//videos//notes.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
+            style="height:200px"></video>
+            <div class="card-body row">
+                <hr>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center ">
+                <h3 class="card-title">Official Notes</h3>
+                </div>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <p class="card-text userName" style="font-family: 'Rubik', sans-serif;
+                    color: rgb(98, 4, 43);
+        font-weight: 600;" > <label for="name"> From ICFAI &nbsp</label></p>
+                </div>
+            
+            <div class="col-lg-12 d-flex align-items-center justify-content-center"
+            style="padding-top: 5%;">
+            <a href="#" class="btn btn-dark">View Notes</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+ 
     </div>
  </div>
 </body>

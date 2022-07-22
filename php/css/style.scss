@@ -145,11 +145,23 @@ li:hover{
     text-align-last: center;
 }
 
+// card container starts here
 .secondContainer{
-    margin-top: -.5%;
-    border-top: 3px solid magenta;
+    margin-top: -.3%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 45px;
+    background: rgb(255,255,255);
+    background: linear-gradient(218deg, rgb(234, 166, 245) 0%, rgb(255, 255, 255) 50%, rgb(243, 242, 242) 100%);    
 }
-
+.card-container{
+    padding-block: 5%;
+}
+label{
+    color: black;
+}
+.card{
+    height: 90%;
+}
 
 
 // media Queries

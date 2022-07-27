@@ -51,7 +51,7 @@ if(empty($err)){
     $ans = mysqli_fetch_assoc($result); 
     $ans1 = mysqli_fetch_assoc($result1); 
 
-    if($ans['enrol_no'] != $enrol && $ans1['user_name'] != $name){
+  
    try{
     // we insert the user data to the database
     // first we hash the password 
@@ -63,7 +63,7 @@ if(empty($err)){
    catch(Exception $e){
         $e->getMessage();
    }
-     }
+     
     // using prepared statements (not working)
     // try{    
         //  connect to the database and check if the enrol no exists 

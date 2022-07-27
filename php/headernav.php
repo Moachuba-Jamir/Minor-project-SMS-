@@ -23,7 +23,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
                     <li class="col-xs-3"><a href="index.php">Home</a></li>
                     <li class="col-xs-3"><a href="">Support</a></li>
                     <li class="col-xs-3"><a href="">About</a></li>
-                    <li class="col-xs-3"><a href="logout.php">Log Out</a></li>
+                    <li class="col-xs-3"><a href="">Profile</a></li>
                </ul>
             </div>
         </div>

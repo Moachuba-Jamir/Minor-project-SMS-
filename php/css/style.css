@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+hmtl {
+  scroll-behavior: smooth;
+}
+
 .navContainer {
   position: relative;
 }
@@ -176,7 +180,7 @@ li:hover {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   font-size: 1.2em;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Rubik', sans-serif;
   padding-inline: 10%;
 }
 
@@ -188,8 +192,10 @@ li:hover {
   border-radius: 15px;
 }
 
-.btnContainer .btn:hover::after {
-  content: "online";
+.info-header {
+  font-size: 'Dosis', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 .c1 {
@@ -214,6 +220,17 @@ label {
 
 .card {
   height: 90%;
+  -webkit-box-shadow: 0 9px 35px #671d00;
+          box-shadow: 0 9px 35px #671d00;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 15%;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -252,9 +269,12 @@ label {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .c1 {
-    padding-right: 5%;
+@media only screen and (max-width: 500px) {
+  .oneVid {
+    display: none;
+  }
+  .sectionPara {
+    text-align: center;
   }
 }
 

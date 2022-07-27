@@ -5,6 +5,9 @@
     padding: 0;
     margin: 0;
 }
+hmtl{
+    scroll-behavior: smooth;
+}
 
 
 // parent class for navbar
@@ -125,7 +128,7 @@ li:hover{
             box-shadow: 0 9px 35px rgb(103, 29, 0);
             transition: all .3s ease-in-out;
             font-size: 1.2em;
-            font-family: 'Dosis', sans-serif;
+            font-family: 'Rubik', sans-serif;
             padding-inline: 10%;
         }
         .btnn:hover{
@@ -133,11 +136,12 @@ li:hover{
             box-shadow: 0 9px 35px rgb(0, 0, 0);
             border-radius: 15px;
         }
-        
-        .btn:hover::after{
-            content:"online";
-        }
       
+}
+.info-header{
+    font-size: 'Dosis', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 
@@ -161,6 +165,13 @@ label{
 }
 .card{
     height: 90%;
+    box-shadow: 0 9px 35px rgb(103, 29, 0);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 15%;
+}
+.card:hover{
+    transform: scale(1.07);
 }
 
 
@@ -183,9 +194,12 @@ label{
     height: 400px;
 }
   }
-  @media only screen and (min-width: 1200px) {
-    .c1{
-        padding-right: 5%;
+  @media only screen and (max-width: 500px) {
+    .oneVid{
+        display: none;
+    }
+    .sectionPara{
+        text-align: center;
     }
    }
    @media only screen and (max-width: 990px) {

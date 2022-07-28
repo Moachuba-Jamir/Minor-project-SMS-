@@ -3,7 +3,7 @@ Student Manager for IUN Nagaland
 
 <h2>ICFAI Student Management System </h2> <br>
 A MinorProject for BCA 4th Semester by <b><em>Moachuba</em></b><br>
-Under the Guidance of <b>O.Bhopen </b> <i>(HOD Comp.Science Dept)</i><br>
+Under the Guidance of <b><em>O.Bhopen singh </em></b> <i>(HOD Comp.Science Dept)</i><br>
 <b>Enrolment No </b>: 20STUCNND01011
 
 

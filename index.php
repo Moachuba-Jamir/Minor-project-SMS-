@@ -57,7 +57,7 @@ if(!isset($_SESSION['enrol_no'])){
             </section>
         </div>
         <div class="col-lg-6 d-flex aligns-items-center justify-content-center vidContainer">
-            <video class="oneVid ratio ratio-16x9" src="Assets/videos/final.mp4" muted playsinline autoplay loop></video>
+            <video class="oneVid ratio ratio-16x9" src="Assets/videos/Final.mp4" muted playsinline autoplay loop></video>
         </div>
     </div>
     

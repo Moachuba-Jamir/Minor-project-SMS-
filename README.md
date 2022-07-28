@@ -14,3 +14,11 @@ Under the Guidance of <b><em>O.Bhopen singh </em></b> <i>(HOD Comp.Science Dept)
   <li>Set by a local environment (I used XAMPP, Apace servers)</li>
   <li> http://<code>localhost/project_dir</code></li>
 </ul>
+
+
+<h3>Features</h3>
+<ul>
+  <li>Login and loguot system</li>
+  <li>Database with complete semester information</li>
+  <li>Student analytics</li>
+</ul>

@@ -8,11 +8,26 @@ include_once 'headernav.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css//style.css">
+    <title>Fee</title>
+    <link rel="stylesheet" href="css//style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    
+  <div class="container d-flex align-items-center justify-content-center h-100">
+    <div class="row h-100">
+        <div class="col-lg-6">
+        <div class="col-lg-6 d-flex aligns-items-center justify-content-center vidContainer">
+            <video class="oneVid1 ratio ratio-16x9" src="Assets/videos/comingsoon.mp4" muted playsinline autoplay loop></video>
+        </div>
+        </div>
+        <div class="col-lg-5 mt-5">
+        <h3>Feature coming soon </h3>
+        <h5>The goal is to integrate a payment feature through which students can clear their semester fees from the webiste</h5>
+
+        </div>
+    </div>
+  </div>
+
+  
 </body>
 </html>

@@ -67,7 +67,7 @@ if(isset($_REQUEST['login'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
-    <link rel="stylesheet" href="../php/css/login.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
 </head>
@@ -76,14 +76,14 @@ if(isset($_REQUEST['login'])){
     <div class="container loginContainer">
         <div class="row animation">
             <div class="col-lg-6 ratio ratio-16x9 col-lg-offset-3  col-md-offset-3 col-sm-offset-1">
-                <video  class="oneVid" src="../Assets//videos//phone1.mp4" autoplay loop></video>
+                <video  class="oneVid" src="Assets//videos//phone1.mp4" autoplay loop></video>
             </div>
         </div>
     </div>
     <div class="row">
             <div class=" logo col-lg-6 col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-xs-offset-3">
             <a href="index.php">
-                    <img src="../Assets/Images/logo.svg" alt="ICFAI university Logo" width="180". height="70">
+                    <img src="Assets/Images/logo.svg" alt="ICFAI university Logo" width="180". height="70">
                 </a>
             </div>
         </div>

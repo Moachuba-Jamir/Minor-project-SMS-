@@ -35,23 +35,29 @@ if(!isset($_SESSION['enrol_no'])){
                 <p class="sectionPara d-flex aligns-items-center justify-content-center"> Welcome to ICFAI's student
                     Management System. Download your semester marksheets, attendance and many more with just a single click
                     . Track your Academic progress now!  
-                    <h5 class="c1 animateMe col-lg-7 d-flex aligns-items-center justify-content-center">For campus students only</h5>
+                    <h5 class="c1 animateMe col-lg-8 d-flex aligns-items-center justify-content-center">For campus students only</h5>
                 </p>
-                <div class="row mainbtnContainer">
-                    <div class="col-lg-4 col-md-6 col-sm-6 mt-3 btnContainer  ">
-                       <button class="btnn ms-3">
+              <div class="row mainbtnContainer">
+                    <div class="col-lg-6  mt-3 btnContainer  ">
+                     <a href="profile.php">
+                     <button class="btnn ms-3">
                         &nbspProfile&nbsp
                        </button>
+                     </a>
                     </div>
-                    <div class="col-lg-5 col-md-6 col-sm-6 mt-3  btnContainer ">
-                       <a href="logout.php"> <button class="btnn">Log out</button></a>
+                    <div class="col-lg-6  mt-3  btnContainer ">
+                    <a href="logout.php">
+                     <button class="btnn">
+                        LogOut 
+                       </button>
+                     </a>
                     </div>
                 </div>
                 <br>
             </section>
         </div>
         <div class="col-lg-6 d-flex aligns-items-center justify-content-center vidContainer">
-            <video class="oneVid ratio ratio-16x9" src="../Assets/videos/final.mp4" muted playsinline autoplay loop></video>
+            <video class="oneVid ratio ratio-16x9" src="Assets/videos/final.mp4" muted playsinline autoplay loop></video>
         </div>
     </div>
     
@@ -73,12 +79,12 @@ if(!isset($_SESSION['enrol_no'])){
     <div class="row container card-container">
         <div class="col-lg-3 d-flex align-items-center justify-content-center"  data-aos="fade-left">
             <div class="card myCard" style="width: 18rem; border-radius: 15px;">
-            <video src="../Assets//videos//results3.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
+            <video src="Assets//videos/analytics.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
             style="height:200px"></video>
             <div class="card-body row">
                 <hr>
                 <div class="col-lg-12 d-flex align-items-center justify-content-center ">
-                <h3 class="card-title">Semester Results</h3>
+                <h3 class="card-title">Your Analytics</h3>
                 </div>
                 <div class="col-lg-12 d-flex align-items-center justify-content-center">
                 <p class="card-text userName" style="font-family: 'Rubik', sans-serif;
@@ -88,7 +94,7 @@ if(!isset($_SESSION['enrol_no'])){
             
             <div class="col-lg-12 d-flex align-items-center justify-content-center"
             style="padding-top: 5%;">
-            <a href="results.php" class="btn btn-danger">Analytics</a>
+            <a href="results.php" class="btn btn-warning">Check now</a>
             </div>
             
         </div>
@@ -99,7 +105,7 @@ if(!isset($_SESSION['enrol_no'])){
         data-aos="fade-left">
             <div class="card myCard " style="width: 18rem; border-radius: 15px;" 
             >
-            <video src="../Assets//videos//payment.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
+            <video src="Assets/videos/payment.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
             style="height:200px"></video>
             <div class="card-body row">
                 <hr>
@@ -109,7 +115,7 @@ if(!isset($_SESSION['enrol_no'])){
                 <div class="col-lg-12 d-flex align-items-center justify-content-center">
                 <p class="card-text userName" style="font-family: 'Rubik', sans-serif;
                     color: rgb(98, 4, 43);
-        font-weight: 600;" > <label for="name">Degree: &nbsp</label><?php echo $_SESSION['degree'] ?></p>
+        font-weight: 600;" > <label for="name">Course: &nbsp</label><?php echo $_SESSION['course'] ?></p>
                 </div>
             
             <div class="col-lg-12 d-flex align-items-center justify-content-center"
@@ -123,22 +129,22 @@ if(!isset($_SESSION['enrol_no'])){
 <div class="col-lg-3 d-flex align-items-center justify-content-center"
 data-aos="fade-right">
             <div class="card myCard" style="width: 18rem; border-radius: 15px;">
-            <video src="../Assets//videos//student.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
+            <video src="Assets/videos/code.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
             style="height:200px"></video>
             <div class="card-body row">
                 <hr>
                 <div class="col-lg-12 d-flex align-items-center justify-content-center ">
-                <h3 class="card-title">Attendance</h3>
+                <h3 class="card-title">Source code</h3>
                 </div>
                 <div class="col-lg-12 d-flex align-items-center justify-content-center">
                 <p class="card-text userName" style="font-family: 'Rubik', sans-serif;
                     color: rgb(98, 4, 43);
-        font-weight: 600;" > <label for="name">Id: &nbsp</label><?php echo $_SESSION['enrol_no'] ?></p>
+        font-weight: 600;"> Minor Project</p>
                 </div>
             
             <div class="col-lg-12 d-flex align-items-center justify-content-center"
             style="padding-top: 5%;">
-            <a href="attendance.php" class="btn btn-warning">Check Attendance</a>
+            <a href="https://github.com/Moachuba-Tomato/Minor-project-SMS-" target="_blank" class="btn btn-success active">View code</a>
             </div>
             
         </div>
@@ -147,7 +153,7 @@ data-aos="fade-right">
 <div class="col-lg-3 d-flex align-items-center justify-content-center"
 data-aos="fade-right">
             <div class="card myCard" style="width: 18rem; border-radius: 15px;">
-            <video src="../Assets//videos//notes.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
+            <video src="Assets/videos//notes.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
             style="height:200px"></video>
             <div class="card-body row">
                 <hr>
@@ -162,7 +168,7 @@ data-aos="fade-right">
             
             <div class="col-lg-12 d-flex align-items-center justify-content-center"
             style="padding-top: 5%;">
-            <a href="./management//notes.php" class="btn btn-dark">View Notes</a>
+            <a href="notes.php" class="btn btn-dark">View Notes</a>
             </div>
             
         </div>

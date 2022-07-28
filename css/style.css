@@ -28,7 +28,7 @@ hmtl {
 }
 
 .firstContainer {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .main-container .left {
@@ -72,7 +72,7 @@ li:hover {
 }
 
 .secContainer {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .animateMe {
@@ -271,7 +271,9 @@ label {
 
 @media only screen and (max-width: 500px) {
   .oneVid {
-    display: none;
+    height: 300px;
+    padding: none;
+    margin: none;
   }
   .sectionPara {
     text-align: center;

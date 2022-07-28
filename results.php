@@ -1,7 +1,11 @@
 <?php 
+  session_start();
   include_once 'headernav.php';
   include_once 'connect.php';
-  session_start();
+ 
+  // // checking
+  // $myenrol ="SELECT enrol_no FROM users Where enrol_no = '$enrol'";
+  // $result = mysqli_query($db_con,$myenrol);
     // first semester
     $enrol = $_SESSION['enrol_no'];
     $name_query = "SELECT name FROM `bca_2920_students` WHERE enrol_no = '$enrol'";
@@ -19,6 +23,7 @@ if(isset($ans)){
     $els = $ans['English_Language_Skills_1'];
     $clab = $ans['Computer_Lab_I']; 
     $dos = $ans['Dos_win_excel_pp']; 
+  
 }
 
     // second semester
@@ -33,6 +38,7 @@ if(isset($ans)){
     $dnt = $ans['Dot_Net_Tech'];
     $clab2 = $ans['Computer_Lab_II']; 
     $sip = $ans['SIP']; 
+
 }
 
     // thrid semester
@@ -182,7 +188,7 @@ if(isset($ans)){
 
 <br><br><br><br><br>
 <div class="row chartRow">
-    <div class="col-lg-6 sm-me-5 lg-ms-5 chartContainer
+    <div class="col-lg-5 sm-me-5 lg-ms-5 chartContainer
      d-flex align-items-center justify-content-center ">
     <canvas id="myChart7"></canvas>
     </div>
@@ -214,6 +220,7 @@ if(isset($ans)){
     let els = '<?=$els?>';
     let clab = '<?=$clab?>'; 
     let dos =  '<?=$dos?>'; 
+    console.log(this.cp);
 
 //  semester two
     let oop = '<?=$oop?>';
@@ -338,6 +345,8 @@ const labels2 = [
           'rgba(255, 159, 64, 0.7)',
           'rgba(0, 0, 0, 0.7)'],
       data: [cf, cp, maths, pom, els, clab, dos],
+      borderWidth: 1,
+      borderRadius: 5
     },
     {
         label: ["Internal Marks(c1 + c2)"],
@@ -345,6 +354,8 @@ const labels2 = [
         backgroundColor:['rgb(53, 1, 75)'],
         borderColor:['rgb(0,0,0)'],
         data: [30,20,23,34,18,15,28],
+        borderWidth: 1,
+      borderRadius: 5
     }
 ]
   };
@@ -363,6 +374,8 @@ const labels2 = [
           'rgba(255, 159, 64, 0.7)',
           'rgba(0, 0, 0, 0.7)'],
       data: [oop, dor, ms, m2, dnt, clab2, sip],
+      borderWidth: 1,
+      borderRadius: 5
     },
     {
         label: ["Internal Marks(c1 + c2)"],
@@ -370,6 +383,8 @@ const labels2 = [
         backgroundColor:['rgb(53, 1, 75)'],
         borderColor:['rgb(0,0,0)'],
         data: [30,20,23,34,18,15],
+        borderWidth: 1,
+      borderRadius: 5
     }]
   };
   const data3 = {
@@ -386,6 +401,8 @@ const labels2 = [
           'rgba(255, 159, 64, 0.7)',
           'rgba(0, 0, 0, 0.7)'],
       data: [ds, ppro, dbms, se, ccs, clab3],
+      borderWidth: 1,
+      borderRadius: 5
     },
     {
         label: ["Internal Marks(c1 + c2)"],
@@ -393,6 +410,8 @@ const labels2 = [
         backgroundColor:['rgb(53, 1, 75)'],
         borderColor:['rgb(0,0,0)'],
         data: [30,20,23,34,18,15,28],
+        borderWidth: 1,
+      borderRadius: 5
     }]
   };
 
@@ -410,6 +429,8 @@ const labels2 = [
           'rgba(255, 159, 64, 0.7)',
           'rgba(0, 0, 0, 0.7)'],
       data: [fos, ps, jp, clab4, sad, gui,mp],
+      borderWidth: 1,
+      borderRadius: 5
     },
     {
         label: ["Internal Marks(c1 + c2)"],
@@ -417,6 +438,8 @@ const labels2 = [
         backgroundColor:['rgb(53, 1, 75)'],
         borderColor:['rgb(0,0,0)'],
         data: [30,20,23,34,18,15],
+        borderWidth: 1,
+        borderRadius: 5
     }]
   };
 
@@ -433,6 +456,8 @@ const labels2 = [
           'rgba(255, 159, 64, 0.7)',
           'rgba(0, 0, 0, 0.7)'],
       data: [dataComp, awt, web, clab5, evs, sk],
+      borderWidth: 1,
+      borderRadius: 5
     },
     {
         label: ["Internal Marks(c1 + c2)"],
@@ -440,6 +465,8 @@ const labels2 = [
         backgroundColor:['rgb(53, 1, 75)'],
         borderColor:['rgb(0,0,0)'],
         data: [30,20,23,34,18,15],
+        borderWidth: 1,
+      borderRadius: 5
     }]
   };
   const data6 = {
@@ -455,6 +482,8 @@ const labels2 = [
           'rgba(255, 159, 64, 0.7)',
           'rgba(0, 0, 0, 0.7)'],
       data: [cbcs, mp],
+      borderWidth: 1,
+      borderRadius: 5
     },
     {
         label: ["Internal Marks(c1 + c2)"],
@@ -467,12 +496,19 @@ const labels2 = [
   const data7 = {
     labels: labels7,
     datasets: [{
-      label: ["Attendance"],
+      label: ["Semester Attendance"],
       fill:true,
-      backgroundColor:['rgba(219, 134, 134)'],
+      backgroundColor:['rgba(54, 162, 235, 0.7)',
+          'rgba(255, 26, 104, 0.7)',
+          'rgba(255, 206, 86, 0.7)',
+          'rgba(75, 192, 192, 0.7)',
+          'rgba(153, 102, 255, 0.7)',
+          'rgba(255, 159, 64, 0.7)',
+          'rgba(0, 0, 0, 0.7)'],
       data: [sem1,sem2,sem3,sem4,sem5,sem6],
-    }
-  ]
+      borderWidth: 1,
+      borderRadius: 5
+    }]
   };
 
 
@@ -514,7 +550,7 @@ const labels2 = [
     }
   };
   const config7 = {
-    type: 'line',
+    type: 'bar',
     data: data7,
     options: {
     }

@@ -18,7 +18,7 @@ Under the Guidance of <b><em>O.Bhopen singh </em></b> <i>(HOD Comp.Science Dept)
 
 <h3>Features</h3>
 <ul>
-  <li>Login and loguot system</li>
+  <li>Login and Logout system</li>
   <li>Database with complete semester information</li>
   <li>Student analytics</li>
 </ul>

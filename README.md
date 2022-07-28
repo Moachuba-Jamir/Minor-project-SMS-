@@ -10,7 +10,7 @@ Under the Guidance of <b>O.Bhopen </b> <i>(HOD Comp.Science Dept)</i><br>
 <h3>Initial setup</h3>
 <i> </i>
 <ul>
-  <li>Pull the project to a new repository or folder</li>
+  <li>Download the project/git pull to a new folder</li>
   <li>Set by a local environment (I used XAMPP, Apace servers)</li>
   <li> http://<code>localhost/project_dir</code></li>
 </ul>

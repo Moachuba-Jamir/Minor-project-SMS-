@@ -88,7 +88,7 @@ if(!isset($_SESSION['enrol_no'])){
             
             <div class="col-lg-12 d-flex align-items-center justify-content-center"
             style="padding-top: 5%;">
-            <a href="results.php" class="btn btn-danger">View Result</a>
+            <a href="results.php" class="btn btn-danger">Analytics</a>
             </div>
             
         </div>

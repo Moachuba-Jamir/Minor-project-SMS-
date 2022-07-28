@@ -82,7 +82,7 @@ if(isset($ans)){
         $sk = $ans['Soft _skills'];
     }
 
-        // fifth semester
+        //sixth semester
         $enrol = $_SESSION['enrol_no'];
         $query = "SELECT * FROM `bca6` WHERE enrol_no ='$enrol'";
         $result = mysqli_query($db_con, $query);
@@ -92,16 +92,25 @@ if(isset($ans)){
             $cbcs = $ans['CBCS'];
             $majp = $ans['Major_Project'];
         }
-    // cgpa 
 
-    $cgpa_query = "SELECT CGPA from `bca1,bca2,bca3,bca4,bca5,bca6` WHERE enrol_no = $enrol";
-    $res = mysqli_query($db_con, $cgpa_query);
-    $cgpa = mysqli_fetch_assoc($res);
-   
-    echo "<pre>";
-    print_r($cgpa);
-    echo "</pre>";
+    // Attendance
+    $enrol = $_SESSION['enrol_no'];
+    $query = "SELECT * FROM `attendance` WHERE enrol_no ='$enrol'";
+    $result = mysqli_query($db_con, $query);
+    $ans = mysqli_fetch_assoc($result);
+    
+    if(isset($ans)){
+        $sem1 = $ans['sem1'];
+        $sem2 = $ans['sem2'];
+        $sem3 = $ans['sem3'];
+        $sem4 = $ans['sem4'];
+        $sem5 = $ans['sem5'];
+        $sem6 = $ans['sem6'];
+    }
 
+    // echo "<pre>";
+    // print_r($ans);
+    // echo "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -116,16 +125,15 @@ if(isset($ans)){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js" integrity="sha512-zjlf0U0eJmSo1Le4/zcZI51ks5SjuQXkU0yOdsOBubjSmio9iCUp8XPLkEAADZNBdR9crRy3cniZ65LF2w8sRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body style="
-">
+<body>
 <!-- heading container -->
 <div class="container heading">
         <div class="row d-flex align-items-center justify-content-center">
             <div class=" header1 col-lg-12 d-flex align-items-center justify-content-center">
-            <h4 class="title"> Academic analysis for&nbsp<?=$name['name']?> Enrolment no:<?= $enrol?></h4>
+            <h4 class="title"> Academic analysis for&nbsp<?=$name['name']?>   Enrolment no:<?= $enrol?></h4>
             </div>
             <div class="row d-flex align-items-center justify-content-center">
-            <p class="title">Dummy data used here</p>
+            <p class="title">Dummy Database data used here</p>
         </div>
         </div>
       
@@ -174,16 +182,12 @@ if(isset($ans)){
 
 <br><br><br><br><br>
 <div class="row chartRow">
-    <div class="col-lg-5 sm-me-5 lg-ms-5 chartContainer
+    <div class="col-lg-6 sm-me-5 lg-ms-5 chartContainer
      d-flex align-items-center justify-content-center ">
     <canvas id="myChart7"></canvas>
     </div>
 
-    <div class="col-lg-5 me-5 chartContainer 
-    d-flex align-items-center justify-content-center ">
-    <canvas id="myChart8"></canvas>
-    </div>
-
+</div>
 </div>
 
 
@@ -199,6 +203,7 @@ if(isset($ans)){
   const ctx4 = document.getElementById('myChart4').getContext("2d");
   const ctx5 = document.getElementById('myChart5').getContext("2d");
   const ctx6 = document.getElementById('myChart6').getContext("2d");
+  const ctx7 = document.getElementById('myChart7').getContext("2d");
 
 // getting values from the $ans variable
 // semester one
@@ -249,6 +254,14 @@ if(isset($ans)){
     let cbcs = '<?=$cbcs?>';
     let majp =  '<?=$majp?>';
 
+    
+// attendance
+    let sem1 = '<?=$sem1?>';
+    let sem2 =  '<?=$sem2?>';
+    let sem3= '<?=$sem3?>';
+    let sem4 = '<?=$sem4?>';
+    let sem5= '<?=$sem5?>'; 
+    let sem6= '<?=$sem6?>';
     
 
 //data visualization
@@ -301,7 +314,15 @@ const labels2 = [
         'CBCS',
         'Major_Project',
   ]
-       
+    
+  const labels7 =[
+        '1st Sem',
+        '2nd Sem',
+        '3rd Sem',
+        '4th Sem',
+        '5th Sem',
+        '6th Sem',
+  ]
   
 
   const data = {
@@ -443,6 +464,17 @@ const labels2 = [
         data: [30],
     }]
   };
+  const data7 = {
+    labels: labels7,
+    datasets: [{
+      label: ["Attendance"],
+      fill:true,
+      backgroundColor:['rgba(219, 134, 134)'],
+      data: [sem1,sem2,sem3,sem4,sem5,sem6],
+    }
+  ]
+  };
+
 
   const config = {
     type: 'bar',
@@ -481,6 +513,12 @@ const labels2 = [
     options: {
     }
   };
+  const config7 = {
+    type: 'line',
+    data: data7,
+    options: {
+    }
+  };
 
   const myChart = new Chart(ctx,config);
   const myChart2 = new Chart(ctx2,config2);
@@ -488,6 +526,7 @@ const labels2 = [
   const myChart4 = new Chart(ctx4,config4);
   const myChart5 = new Chart(ctx5,config5);
   const myChart6 = new Chart(ctx6,config6);
+  const myChart7 = new Chart(ctx7,config7);
 </script>
 
     

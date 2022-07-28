@@ -2,10 +2,8 @@
   session_start();
   include_once 'headernav.php';
   include_once 'connect.php';
- 
-  // // checking
-  // $myenrol ="SELECT enrol_no FROM users Where enrol_no = '$enrol'";
-  // $result = mysqli_query($db_con,$myenrol);
+
+
     // first semester
     $enrol = $_SESSION['enrol_no'];
     $name_query = "SELECT name FROM `bca_2920_students` WHERE enrol_no = '$enrol'";

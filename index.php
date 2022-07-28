@@ -77,7 +77,7 @@ if(!isset($_SESSION['enrol_no'])){
  <!-- second container -->
  <div class=" secondContainer container-fluid d-flex justify-content-center align-items-center">
     <div class="row container card-container">
-        <div class="col-lg-3 d-flex align-items-center justify-content-center"  data-aos="fade-left">
+        <div class="col-lg-3 d-flex align-items-center justify-content-center"  data-aos="flip-up">
             <div class="card myCard" style="width: 18rem; border-radius: 15px;">
             <video src="Assets//videos/analytics.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
             style="height:200px"></video>
@@ -102,7 +102,7 @@ if(!isset($_SESSION['enrol_no'])){
 </div>
 <!-- fee payment -->
 <div class="col-lg-3 d-flex align-items-center justify-content-center"
-        data-aos="fade-left">
+        data-aos="flip-up">
             <div class="card myCard " style="width: 18rem; border-radius: 15px;" 
             >
             <video src="Assets/videos/payment.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
@@ -127,7 +127,7 @@ if(!isset($_SESSION['enrol_no'])){
     </div>
 </div>
 <div class="col-lg-3 d-flex align-items-center justify-content-center"
-data-aos="fade-right">
+data-aos="flip-up">
             <div class="card myCard" style="width: 18rem; border-radius: 15px;">
             <video src="Assets/videos/code.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
             style="height:200px"></video>
@@ -151,7 +151,7 @@ data-aos="fade-right">
     </div>
 </div>
 <div class="col-lg-3 d-flex align-items-center justify-content-center"
-data-aos="fade-right">
+data-aos="flip-up">
             <div class="card myCard" style="width: 18rem; border-radius: 15px;">
             <video src="Assets/videos//notes.mp4" class="ratio ratio-4x3 " muted playsinline autoplay loop
             style="height:200px"></video>

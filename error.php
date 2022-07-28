@@ -32,9 +32,9 @@ include_once 'headernav.php';
 </p>
 <ul>
                 <li>
-                    <a href="signup.php">Register</a>
+                    <a href="logout.php">Register</a>
                 </li>
-                <li><a href="login.php">Log in</a></li>
+                <li><a href="logout.php">Log in</a></li>
             </ul>
         </div>
     </div>

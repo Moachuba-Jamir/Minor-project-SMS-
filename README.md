@@ -11,7 +11,7 @@ Under the Guidance of <b><em>O.Bhopen singh </em></b> <i>(HOD Comp.Science Dept)
 <i> </i>
 <ul>
   <li>Download the project/git pull to a new folder</li>
-  <li>Set by a local environment (I used XAMPP, Apace servers)</li>
+  <li>Set up a local environment (I used XAMPP, Apace servers)</li>
   <li> http://<code>localhost/project_dir</code></li>
 </ul>
 
